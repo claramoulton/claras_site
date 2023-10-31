@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: verdana;
+}
+
+.three-column {
+  display: flex;
+}
+
+.left,
+.right {
+  flex: 1;
+}
+
+.cards {
+  flex: 4;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards > section {
+  color: darkgoldenrod;
+  margin: 1rem;
+  padding: 1rem;
+  border: solid 2px sandybrown;
+  background-color: thistle;
+  width: calc(100% / 3 - 2rem);
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  .cards > section {
+    width: 100%;
+  }
+}
